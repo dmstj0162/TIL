@@ -1,0 +1,30 @@
+# Git 명령어 정리
+
+1. git init
+> 여기에 git으로 버전 관리를 하겠다.
+
+2. git 수정 방법
+> Revert : reset 보다 안전함, 실수한 기록을 취소함(삭제X)
+> Reset : 이전 기록 다 삭제됨
+
+3. git push origin main
+> add, commit 후에 메인 레포지토리에 올릴때 사용하는 명령어
+
+4. git branch <브랜치명>
+> 새로운 작업 공간(브랜치) 생성
+
+5. git switch <브랜치명>
+> 브랜치 이동 명령어 
+
+6. git merge <브랜치명>
+> 메인에 있는 코드와 내가 짠 코드를 합칠때 사용
+> main 레포지토리로 이동 후, git merge 
+
+7. git switch -c <브랜치명>
+> 새로운 브랜치 생성 및 해당 브랜치로 이동하는 명령어
+
+*충돌상황 연습*
+Git의 fork(오픈소스 가져오기)를 사용하여, fork된 url을 복사함
+새로운 폴더 생성 후, git bash에서 clone 기능을 활용하여 git clone <url>을 입력함
+해당 폴더에 fork된 폴더가 생겼는지 확인한 후, vs 열기
+main 브랜치에서 생성된 파일을 각자의 새로운 브랜치를 만들고 이동한 후, 파일 생성 및 수정하여 PR(Pull-Request)를 보낼 수 있음
